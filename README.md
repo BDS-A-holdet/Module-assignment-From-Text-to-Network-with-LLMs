@@ -19,7 +19,7 @@
 ### LLM Extraction
 1. **Sector classification:** Ollama Gemma3:12b with few-shot learning identified 74 IT companies from S&P 500
 2. **Participant extraction:** Google Gemini 2.5 Flash Lite with Pydantic schema extracted structured data (name, role, organization, type) from transcripts
-3. **Quality:** Manual review showed 90-95% precision, 85-90% recall for participant identification
+3. **Quality:** Manual review showed strong precision, and somewhat strong recall for participant identification
 
 ### Network Construction
 - **Type:** Undirected, weighted company-company network
@@ -28,13 +28,13 @@
 - **Logic:** Companies sharing analysts likely operate in similar segments or are competitive peers
 
 ### Analysis
-- **Community detection:** Greedy modularity optimization (modularity = 0.570)
+- **Community detection:** Greedy modularity optimization (modularity = 0.506)
 - **Centrality metrics:** Degree, eigenvector, and betweenness centrality
 - **Result:** 4 communities identified (Semiconductors, Software/Cloud, Hardware, Mixed/FinTech)
 
 ## Main Findings
 
-1. **Distinct market segmentation:** Modularity (0.570) confirms clear IT subsectors aligned with industry structure
+1. **Distinct market segmentation:** Modularity (0.506) confirms clear IT subsectors aligned with industry structure
 2. **Cybersecurity dominance:** CrowdStrike, Palo Alto, ServiceNow show highest coverage (30+ analyst organizations)
 3. **Semiconductor integration:** Chip companies form densest community, indicating high analyst specialization
 4. **Bridge companies:** Western Digital, Broadcom, Intel connect multiple segments (high betweenness centrality)
@@ -53,16 +53,16 @@
 ## Repository Structure
 
 ```
-├── notebooks/
-│   ├── LLM_pipeline_identifying_branches_cleaned.ipynb  # Sector classification
-│   └── exam_load_3__1_.ipynb                            # Main pipeline
-├── data/
-│   ├── it_companies.csv                                  # 74 companies
-│   ├── structured_output.csv                             # Extracted data
-│   └── manual_review_sample.csv                          # Quality eval
-├── outputs/
-│   └── Slide_deck.pptx                                   # Presentation
-└── requirements.txt                                      # Dependencies
+├── Notebooks/
+│   ├── Final notebook.ipynb                             # Main pipeline
+│   └── LLM pipeline identifying branches cleaned.ipynb  # Sector classification
+├── Structured outputs/
+│   ├── structured output.csv                            # Extracted data
+│   └── manual review sample.csv                         # Quality evaluation
+├── Word files/
+│   └── Tekst eksempler.docx                             # Informal precision/recall
+├── Analyst company network viz.png                      # Knowledge graph
+└──requirements.txt                                      # Dependencies
 ```
 
 ## Requirements
