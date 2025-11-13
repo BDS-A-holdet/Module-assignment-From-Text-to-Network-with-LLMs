@@ -509,7 +509,7 @@ ollama>=0.1.0     # Local LLM inference
 
 ## Contributions
 
-**Group Members:** Alexander Christiansen, Anders Skjødt Sønderby, Christian Ory Nielsen & Peter Christian Østerballe 
-**Module assignment** From Text to Network with LLMs
-**Submission Date:** November 14, 2025, 10:00 AM
+- **Group Members:** Alexander Christiansen, Anders Skjødt Sønderby, Christian Ory Nielsen & Peter Christian Østerballe 
+- **Module assignment** From Text to Network with LLMs
+- **Submission Date:** November 14, 2025, 10:00 AM
 
