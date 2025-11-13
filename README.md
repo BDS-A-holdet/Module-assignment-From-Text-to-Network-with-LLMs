@@ -444,7 +444,7 @@ This network represents **shared analyst attention** across IT companies:
 
 ---
 
-## Recommended Future Enhancements
+## Future Enhancements
 
 1. **Improved Topic Extraction**
    - Use predefined topic taxonomy in LLM prompt
@@ -505,71 +505,11 @@ tqdm>=4.65.0      # Progress bars
 ollama>=0.1.0     # Local LLM inference
 ```
 
-### Environment Setup
-
-```bash
-# 1. Clone repository
-git clone <your-repo-url>
-cd llm-network-analysis
-
-# 2. Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# 3. Install dependencies
-pip install -r requirements.txt
-
-# 4. Set up API keys
-cp .env.example .env
-# Add your GEMINI_API_KEY to .env file
-```
-
-### Running the Analysis
-
-```bash
-# Option 1: Run sector classification first (optional if you only want IT sector)
-jupyter notebook notebooks/LLM_pipeline_identifying_branches_cleaned.ipynb
-
-# Option 2: Run main analysis pipeline
-jupyter notebook notebooks/exam_load_3__1_.ipynb
-```
-
 ---
 
-## Key Takeaways for Exam Discussion
+## Contributions
 
-### Methodological Decisions
-1. **Why IT sector only?** → Coherent analysis, manageable scope, rich relational structure
-2. **Why individual analysts?** → More granular than firm-level, reveals specific patterns
-3. **Why not use topics?** → Quality issues, high granularity, systematic limitation identified
-
-### Technical Insights
-1. **Structured outputs (Pydantic + JSON Schema) are crucial** → Eliminates post-processing
-2. **Quality assessment is essential** → Precision/recall analysis informs network construction decisions
-3. **LLMs are good at structured extraction** → But require clear schemas and validation
-
-### Analytical Insights
-1. **Network analysis validates domain knowledge** → Communities match expected IT subsectors
-2. **Centrality measures reveal different aspects** → Degree vs. eigenvector vs. betweenness
-3. **Modularity confirms real structure** → Not just random connections
-
-### Limitations as Strengths
-1. **Acknowledging topic quality issues** → Shows scientific rigor
-2. **Documenting temporal constraints** → Sets scope for future work
-3. **Discussing alternative approaches** → Demonstrates methodological awareness
-
----
-
-## Contact & Contributions
-
-**Group Members:** [Your names here]  
-**Course:** From Text to Network with LLMs  
+**Group Members:** Alexander Christiansen, Anders Skjødt Sønderby, Christian Ory Nielsen & Peter Christian Østerballe 
+**Module assignment** From Text to Network with LLMs
 **Submission Date:** November 14, 2025, 10:00 AM
 
-For questions about the analysis or methodology, please refer to the slide deck or contact the group members.
-
----
-
-## License
-
-This project is created for educational purposes as part of a university course assignment.
