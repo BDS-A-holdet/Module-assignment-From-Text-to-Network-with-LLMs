@@ -7,7 +7,7 @@
 ## Dataset
 
 **Source:** [S&P 500 Earnings Call Transcripts](https://huggingface.co/datasets/kurry/sp500_earnings_transcripts) (2005-2025)  
-**Subset:** Information Technology sector, 2024 (76 companies, 4,000+ participant entries)
+**Subset:** Information Technology sector, 2024 (74 companies, 4,000+ participant entries)
 
 **Rationale:**
 - **Sector focus:** IT companies share analysts, enabling analysis of market segmentation (chips, software, hardware, cloud)
